@@ -33,6 +33,7 @@ export default function RootLayout({
             onLoad={() => {
                 console.log('Telegram Web App script loaded');
             }}
+            defer
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
