@@ -9,6 +9,8 @@ export default function Home() {
     if (window.Telegram?.WebApp?.ready) {
       window.Telegram.WebApp.ready();
       window.Telegram.WebApp.BackButton.show();
+      console.log(window.Telegram.WebApp);
+      
     }
   }, []);
   return (
