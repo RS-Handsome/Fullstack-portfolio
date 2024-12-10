@@ -1,15 +1,8 @@
-// src/types/global.d.ts
-interface TelegramWebApp {
-  ready: () => void;
-  BackButton: {
-    show: () => void;
-    hide: () => void;
-  };
-  // Add other properties and methods as needed
-}
-
-interface Window {
-  Telegram: {
-    WebApp: TelegramWebApp;
-  };
+declare global {
+  namespace NodeJS {
+    interface ProcessEnv {
+      /** Authorization token for the bot. This is used to validate the hash's authenticity. */
+      BOT_TOKEN: string;
+    }
+  }
 }
